@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="screen and (max-width:850px)" href="css/phone.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* body{
+            background-image: url(b.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw;
+        } */
+        #navbar {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        #logo img {
+            position: relative;
+            top: -12px;
+            border-radius: 10px;
+            height: 90px;
+            width: 111px;
+            margin: 24px 29px;
+        }
+
+        #navbar ul {
+            display: flex;
+            height: 53px;
+        }
+
+        #navbar::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            background-color: black;
+            height: 66%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.57;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: black;
+            margin: 12px;
+            padding: 15px;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(0, 27, 231);
+            /* display: block; */
+            padding: 13px 15px;
+            margin: 25px;
+        }
+
+        #home {
+            height: 477px;
+            display: flex;
+            flex-direction: column;
+            padding: 2px 200px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            background: url(b.jpg);
+            height: 70%;
+            width: 100%;
+            z-index: -1;
+            background-repeat: no-repeat;
+            background-size: 100vw;
+            opacity: 0.99;
+        }
+
+        #home h1 {
+            font-size: 2rem;
+            margin: 7px;
+            color: #ff0078;
+            font-family: cursive;
+        }
+
+        #home p {
+            border-radius: 25px;
+            background-color: white;
+            color: rgb(182, 80, 80);
+            font-size: 18px;
+            padding: 6px;
+            margin: -7px;
+            font-family: cursive;
+        }
+
+        .btn {
+            margin: 12px;
+            padding: 10px;
+            background-color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.2rem;
+            border: 5px solid black;
+            border-radius: 12px;
+            font-weight: bolder;
+        }
+
+        .btn:hover {
+            color: blueviolet;
+            cursor: pointer;
+            padding: 12px;
+            margin: 9px;
+        }
+
+        .h1-primary {
+            text-align: center;
+            font-size: 3.8rem;
+            padding: 12px;
+        }
+
+        .h2-secondary {
+            text-align: center;
+            font-size: 2.5rem;
+            padding: 10px;
+        }
+
+        #service {
+            display: flex;
+            margin: 30px;
+        }
+
+        #service .box {
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid rgb(254, 0, 0);
+            border-radius: 10px;
+            /* background-color: rgb(247, 230, 230); */
+        }
+
+        #service .box img {
+            height: 160px;
+            display: block;
+            margin: auto;
+
+        }
+
+        #service-container {
+            height: 400px;
+        }
+
+        .client {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client img {
+            height: 60px;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url(bb.jpg);
+            background-size: 100vw;
+            height: 30%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #contact {
+            position: relative;
+            margin: 52px;
+        }
+
+        #contact h3 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="error">
+        </div>
+        <ul>
+            <li class="items"><a href="#">Home</a></li>
+            <li class="items"><a href="#">Service</a></li>
+            <li class="items"><a href="#">About us</a></li>
+            <li class="items"><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>Have a World Tour with your partner</h1>
+        <p> The chance to discover new cultures, broaden your mind, create unforgettable memories, find fulfillment, and
+            experience personal growth by stepping outside your comfort zone. Travel offers unique experiences, such as
+            seeing new places for the first time, and allows for deep self-discovery, making it a worthwhile endeavor
+            for those seeking a richer, more adventurous life</p>
+        <button class="btn">Book your ticket Now</button>
+    </section>
+    <section class="service-container">
+        <h1 class="h1-primary">Our Services</h1>
+        <div id="service">
+            <div class="box">
+                <img src="mo.jpeg" alt="error">
+                <h2 class="h2-secondary">Ouray</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt molestiae, facilis
+                    rem fugiat provident placeat nihil. Nesciunt minus ratione quos?</p>
+            </div>
+            <div class="box">
+                <img src="partner.jpg" alt="error">
+                <h2 class="h2-secondary">Paris</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt molestiae, facilis
+                    rem fugiat provident placeat nihil. Nesciunt minus ratione quos?</p>
+            </div>
+            <div class="box">
+                <img src="boat.jpg" alt="error">
+                <h2 class="h2-secondary">Venice</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt molestiae, facilis
+                    rem fugiat provident placeat nihil. Nesciunt minus ratione quos?</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h1-primary"> Our Clients</h1>
+        <div class="client">
+            <div class="client-item">
+                <img src="clt logo 1.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="cl2.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="cl3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h3 class="h1-primary">Contact Us</h3>
+        <div class="detail"></div>
+        <h3 class="h1-primary">Build for loved ones</h3>
+    </section>
+</body>
+
+</html>
